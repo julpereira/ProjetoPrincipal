@@ -8,6 +8,7 @@ import {
 	FlatList,
 } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
+import { FontAwesome } from "@expo/vector-icons";
 import { styles } from "./styles";
 interface Item {
 	id: string;
@@ -31,7 +32,7 @@ export default function App() {
 				index !== lista.length - 1 && styles.itemLinha,
 			]}
 		>
-			<AntDesign name="checkcircle" size={20} color="black" />
+			<FontAwesome name="circle" size={20} color="black" />
 			<Text style={styles.texto}>{item.nome}</Text>
 		</View>
 	);
@@ -49,7 +50,7 @@ export default function App() {
 					onChangeText={setItem}
 				/>
 				<TouchableOpacity style={styles.botao} onPress={adicionarItem}>
-					<AntDesign name="pluscircleo" size={24} color="white" />
+					<AntDesign name="plus" size={24} color="white" />
 				</TouchableOpacity>
 			</View>
 
