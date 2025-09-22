@@ -1,52 +1,22 @@
 import { StyleSheet } from "react-native";
 
-export const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: "#fff",
-		padding: 20,
-		paddingTop: 50,
-	},
-	titulo: {
-		fontSize: 24,
-		fontWeight: "bold",
-		marginBottom: 20,
-		color: "#000",
-	},
-	inputContainer: {
-		flexDirection: "row",
-		alignItems: "center",
-		marginBottom: 20,
-	},
-	input: {
-		flex: 1,
-		backgroundColor: "#5c1b35",
-		color: "#fff",
-		paddingHorizontal: 10,
-		height: 50,
-		borderRadius: 5,
-	},
-	botao: {
-		marginLeft: 10,
-		backgroundColor: "#5c1b35",
-		width: 50,
-		height: 50,
-		justifyContent: "center",
-		alignItems: "center",
-		borderRadius: 5,
-	},
-	item: {
-		flexDirection: "row",
-		alignItems: "center",
-		padding: 10,
-	},
-	itemLinha: {
-		borderBottomWidth: 1,
-		borderColor: "#5c1b35",
-	},
-	texto: {
-		marginLeft: 10,
-		fontSize: 18,
-	},
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#f8f6ff",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    padding: 20,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: "bold",
+    color: "#b13756",
+    marginVertical: 20,
+  },
+  text: {
+    fontSize: 16,
+    color: "#b13756",
+    marginVertical: 5,
+  },
 });
-
