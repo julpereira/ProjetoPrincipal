@@ -5,16 +5,15 @@ import ShoppingList from "../../Components/lista/listadeCompras.js";
 import styles from "./styles";
 
 export default function App() {
-  const [items, setItems] = useState<string[]>(["Maçã", "Banana", "Melancia"]);
+  const [items, setItems] = useState<string[]>(["Uva", "Laranja", "Pera"]);
 
-  // Função para adicionar novo item
   const addItem = (item: string) => {
     if (item.trim() !== "") {
       setItems((prev) => [...prev, item]);
     }
   };
 
-  // Função para excluir item pelo índice
+
   const removeItem = (index: number) => {
     setItems((prev) => prev.filter((_, i) => i !== index));
   };
@@ -36,10 +35,9 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.title}>Lista de Compras</Text>
 
-      {/* Componente de entrada */}
       <InputProduct onAdd={addItem} />
 
-      {/* Lista de compras com botão de excluir */}
+
       <ShoppingList items={items} onRemove={removeItem} />
 
       {/*

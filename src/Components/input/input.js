@@ -18,7 +18,8 @@ export default function InputProduct({ onAdd }) {
         value={text}
         onChangeText={setText}
       />
-      <Button title="Adicionar" onPress={handleAdd} />
+      <Button title="Adicionar" onPress={handleAdd}
+      color="#b13756" />
     </View>
   );
 }

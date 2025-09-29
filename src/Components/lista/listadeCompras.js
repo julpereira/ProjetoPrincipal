@@ -8,7 +8,9 @@ export default function ShoppingList({ items, onRemove }) {
       {items.map((item, index) => (
         <View key={index} style={styles.item}>
           <Text style={styles.itemText}>{item}</Text>
-          <Button title="Excluir" onPress={() => onRemove(index)} />
+          <Button title="Excluir" onPress={() => onRemove(index)} 
+          color="#b13756"
+          />
         </View>
       ))}
     </View>
